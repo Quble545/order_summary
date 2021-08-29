@@ -1,0 +1,156 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    font-family: Red Hat Display;
+}
+
+.container {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 7px 7px 30px hsl(225, 32%, 79%)
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    align-items: center;
+    width: 23rem;
+    height: 35rem;
+    border-radius: 1rem;
+    overflow: hidden
+}
+
+#title {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+#bodyText {
+    text-align:center;
+    color:  hsl(224, 23%, 55%);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.0rem;
+    margin-top: 0.75rem;
+}
+
+#textContainer {
+    width: 20rem;
+}
+
+#hero {
+    width: 100%;
+}
+
+.plan {
+    background-color:   hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    height: 5rem;
+    padding-left: 1.25rem;
+    border-radius: 0.75rem;
+}
+
+.subTextContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1.25rem;
+    margin-top: 1rem;
+}
+
+.subHeader {
+    margin-top: 3rem;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color:  hsl(223, 47%, 23%);
+}
+
+.subBody {
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+    color:  hsl(224, 23%, 55%);
+}
+
+.link {
+    color:hsl(245, 75%, 52%);
+    font-weight: bold;
+    margin-left: 5.5rem;
+}
+
+.btn {
+    border:0;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin-top: 1.5rem;
+    width: 20rem;
+    height: 2.9rem;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+    font-family: Red Hat Display;
+    font-weight: bold;
+    box-shadow: 0px 8px 20px hsl(245, 75%, 52%, 0.5)
+}
+
+.link:hover {
+    text-decoration:unset;
+    color: hsl(245, 75%, 52%, 0.5)
+}
+
+.btn:hover {
+    background-color: hsl(245, 75%, 52%, 0.5);
+}
+
+.btn-link {
+    border:0;
+    color:   hsl(224, 23%, 55%);
+    font-size: 0.95rem;
+    font-weight: bolder;
+    background-color: transparent;
+    font-family: inherit;
+    width: 20rem;
+    height: 2.9rem;
+    margin-top: 1rem;
+}
+
+.btn-link:hover {
+    color: hsl(223, 47%, 23%)
+}
+
+
+@media screen  and (min-width: 1440px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/scattered-forcefields.svg');
+    }
+    .container {
+        width: 75%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+
+}
+
